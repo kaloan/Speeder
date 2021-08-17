@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Speeder",
+  "description": "This extension provides you with easy switching of video and audio speed",
+  "version": "1.0",
+  "author": "kaloan",
+
+  "icons": {
+    "128": "sa1MJmQ.jpg"
+  },
+  "browser_action": {
+    "default_title": "Speeder",
+    "default_icon": {
+      "19": "sa1MJmQ.jpg",
+      "20": "sa1MJmQ.jpg",
+      "38": "sa1MJmQ.jpg"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "content.js" ]
+      //,"run_at": "document_start"
+    }
+  ]
+  /*,"permissions": [
+    "activeTab"
+  ]*/
+}
